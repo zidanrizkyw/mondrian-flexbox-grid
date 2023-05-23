@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px 419px;
+      grid-template-rows: 414px 295px 20px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .red-grid {
+      background-color: #E72F24;
+      padding: 0px;
+      margin: 0px;
+
+    }
+
+    .white-grid {
+      background-color: #F0F1EC;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .second-grid {
+      display: grid;
+      grid-template-columns: 360px 50px;
+      grid-template-rows: 295px;
+      gap: 9px;
+      background-color: #000;
+      
+    }
+
+    .second-grid-white1 {
+      background-color: #F0F1EC;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .third-grid {
+      display: grid;
+      grid-template-columns: 50px;
+      grid-template-rows: 130px 155px;
+      gap: 10px;
+    }
+    
+    .third-grid-blue {
+      background-color: #004592;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .third-grid-white {
+      background-color: #F0F1EC;
+      padding: 0px;
+      margin: 0px;
+      grid-row: span 2;
+    }
+
+    .fourth-grid {
+      display: grid;
+      grid-template-columns: 198px 153px 50px;
+      grid-template-rows: 20px 20px 20px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .fourth-grid-yellow {
+      padding: 0px;
+      margin: 0px;
+      background-color: #F9D01E;
+    }
+
+    .fourth-grid-black {
+      padding: 0px;
+      margin: 0px;
+      background-color: #232629;
+    }
+
+    .fourth-grid-white1 {
+      padding: 0px;
+      margin: 0px;
+      background-color: #F0F1EC;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red-grid"></div>
+    <div class="white-grid"></div>
+    <div class="white-grid"></div>
+    <div class="white-grid second-grid">
+      <div class="second-grid-white1"></div>
+      <div class="second-grid-white2 third-grid">
+        <div class="third-grid-blue"></div>
+        <div class="third-grid-white"></div>
+      </div>
+    </div>
+    <div class="white-grid"></div>
+    <div class="white-grid fourth-grid">
+      <div class="fourth-grid-yellow"></div>
+      <div class="fourth-grid-black"></div>
+      <div class="fourth-grid-white1"></div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
